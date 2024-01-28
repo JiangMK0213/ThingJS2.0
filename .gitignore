@@ -1,0 +1,18 @@
+thingjs2.0-demo/node_modules
+# ---------------------------
+# thingjs2.0-demo
+# Logs
+thingjs2.0-demo/logs
+thingjs2.0-demo/*.log
+thingjs2.0-demo/npm-debug.log*
+thingjs2.0-demo/yarn-debug.log*
+thingjs2.0-demo/yarn-error.log*
+thingjs2.0-demo/pnpm-debug.log*
+thingjs2.0-demo/lerna-debug.log*
+thingjs2.0-demo/node_modules
+thingjs2.0-demo/dist
+thingjs2.0-demo/dist-ssr
+thingjs2.0-demo/*.local
+
+# Editor directories and files
+thingjs2.0-demo/.vscode/*
