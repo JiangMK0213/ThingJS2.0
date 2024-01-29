@@ -1,18 +1,19 @@
 <script setup lang="ts">
-setTimeout(async () => {
-  await THING.Utils.login("http://10.100.31.150:8899/processRequest2");
-  setTimeout(() => {
-    const app = new THING.App({
-      url: "/self",
-      onComplete: function (ev: any) {
-        console.log(ev); // 加载完成后回调
-        THING.App.current.levelManager.change(
-          THING.App.current.query(".Campus")[0]
-        );
-      },
-    });
-  }, 1000);
-}, 500);
+import { onMounted } from "vue";
+import { ModuleManager } from "@/modules";
+import * as dat from "dat.gui";
+onMounted(async () => {
+  regGlobal();
+});
+function regGlobal() {
+  /** 管理器群组 */
+  uino.manager = {
+    module: new ModuleManager(),
+  };
+}
+function globalBtn() {
+  const gui = new dat.GUI({}); //创建GUI实例
+}
 </script>
 
 <template>
@@ -20,16 +21,8 @@ setTimeout(async () => {
 </template>
 
 <style scoped>
-.logo {
-  height: 6em;
-  padding: 1.5em;
-  will-change: filter;
-  transition: filter 300ms;
-}
-.logo:hover {
-  filter: drop-shadow(0 0 2em #646cffaa);
-}
-.logo.vue:hover {
-  filter: drop-shadow(0 0 2em #42b883aa);
+#app {
+  width: 100%;
+  height: 100%;
 }
 </style>
