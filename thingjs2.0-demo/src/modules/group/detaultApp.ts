@@ -1,16 +1,3 @@
-/*
- * @Author       : zhangyong
- * @Date         : 2023-07-19 14:17:12
- * @Description  :
- */
-/*
- * @Author: wsy
- * @Date: 2023-06-27 15:04:05
- * @LastEditors: wsy
- * @LastEditTime: 2023-06-27 15:04:05
- * @FilePath: sunny_vue_template/src/modules/map
- * @Description:
- */
 import type { ModuleTemplate } from "../ModuleTemplate";
 
 /** 创建地铁线路 */

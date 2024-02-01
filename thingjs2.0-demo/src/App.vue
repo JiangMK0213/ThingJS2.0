@@ -2,17 +2,20 @@
 import { onMounted } from "vue";
 import { ModuleManager } from "@/modules";
 import * as dat from "dat.gui";
+
 onMounted(async () => {
-  regGlobal();
+  await regGlobal();
+  uino.manager.module.keys.markerBtns.init();
 });
-function regGlobal() {
+async function regGlobal() {
   /** 管理器群组 */
   uino.manager = {
     module: new ModuleManager(),
   };
-}
-function globalBtn() {
-  const gui = new dat.GUI({}); //创建GUI实例
+  /** 初始化所有功能模块 */
+  uino.manager.module.init();
+  // 加载园区
+  await uino.manager.module.keys.detaultApp.create();
 }
 </script>
 

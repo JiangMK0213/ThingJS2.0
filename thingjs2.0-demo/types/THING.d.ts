@@ -8677,8 +8677,8 @@ declare namespace THING {
          * @param options - The options.
          */
     public query(
-      condition: string,
-      options: ObjectQueryOptions
+      condition: string | RegExp,
+      options?: ObjectQueryOptions
     ): THING.Selector;
     /**
          * Query children by name.
