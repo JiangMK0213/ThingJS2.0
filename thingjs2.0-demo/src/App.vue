@@ -5,7 +5,8 @@ import * as dat from "dat.gui";
 
 onMounted(async () => {
   await regGlobal();
-  uino.manager.module.keys.markerBtns.init();
+  // 加载场景中的按钮
+  uino.manager.module.keys.sceneBtns.init();
 });
 async function regGlobal() {
   /** 管理器群组 */

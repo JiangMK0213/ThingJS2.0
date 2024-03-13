@@ -1,7 +1,5 @@
 import type { ModuleTemplate } from "../ModuleTemplate";
 
-/** 创建地铁线路 */
-// class DetaultApp implements ModuleTemplate {
 class DetaultApp {
   constructor() {}
   async create() {

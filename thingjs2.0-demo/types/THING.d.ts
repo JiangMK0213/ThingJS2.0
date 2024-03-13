@@ -66737,21 +66737,21 @@ declare type MovePathLerpArgs = LerpWithSpaceTypeArgs;
  * @property onComplete - The complete callback function.
  */
 declare type LerpFlyToArgs = {
-  position: Number[];
-  target: Number[] | THING.BaseObject;
-  duration: number;
-  delayTime: number;
-  distance: number;
-  horzAngle: number;
-  vertAngle: number;
-  lerpType: LerpType;
-  positionLerpType: LerpType;
-  targetLerpType: LerpType;
-  upLerpType: LerpType;
-  onStart: (...params: any[]) => any;
-  onStop: (...params: any[]) => any;
-  onUpdate: (...params: any[]) => any;
-  onComplete: (...params: any[]) => any;
+  position?: Number[];
+  target?: Number[] | THING.BaseObject;
+  duration?: number;
+  delayTime?: number;
+  distance?: number;
+  horzAngle?: number;
+  vertAngle?: number;
+  lerpType?: LerpType;
+  positionLerpType?: LerpType;
+  targetLerpType?: LerpType;
+  upLerpType?: LerpType;
+  onStart?: (...params: any[]) => any;
+  onStop?: (...params: any[]) => any;
+  onUpdate?: (...params: any[]) => any;
+  onComplete?: (...params: any[]) => any;
 };
 
 /**
